@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F740DAA8E00EDEBF4455FB7 /* Pods_HomeSensors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370ACBC291C2966AB7993EE2 /* Pods_HomeSensors.framework */; };
+		DA2F51AA1D0756DF00FA09AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2F51A91D0756DF00FA09AB /* AppDelegate.swift */; };
+		DA2F51AC1D0756DF00FA09AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2F51AB1D0756DF00FA09AB /* ViewController.swift */; };
+		DA2F51AF1D0756DF00FA09AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2F51AD1D0756DF00FA09AB /* Main.storyboard */; };
+		DA2F51B11D0756DF00FA09AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2F51B01D0756DF00FA09AB /* Assets.xcassets */; };
+		DA2F51B41D0756DF00FA09AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2F51B21D0756DF00FA09AB /* LaunchScreen.storyboard */; };
+		DA2F51BF1D0756DF00FA09AB /* HomeSensorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2F51BE1D0756DF00FA09AB /* HomeSensorsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA2F51BB1D0756DF00FA09AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA2F519E1D0756DF00FA09AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA2F51A51D0756DF00FA09AB;
+			remoteInfo = HomeSensors;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		370ACBC291C2966AB7993EE2 /* Pods_HomeSensors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeSensors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85CFC7D115D26B9A9769E369 /* Pods-HomeSensors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeSensors.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeSensors/Pods-HomeSensors.release.xcconfig"; sourceTree = "<group>"; };
+		95E54E556B63667158796405 /* Pods-HomeSensors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeSensors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeSensors/Pods-HomeSensors.debug.xcconfig"; sourceTree = "<group>"; };
+		DA2F51A61D0756DF00FA09AB /* HomeSensors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeSensors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2F51A91D0756DF00FA09AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA2F51AB1D0756DF00FA09AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA2F51AE1D0756DF00FA09AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA2F51B01D0756DF00FA09AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA2F51B31D0756DF00FA09AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA2F51B51D0756DF00FA09AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA2F51BA1D0756DF00FA09AB /* HomeSensorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeSensorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2F51BE1D0756DF00FA09AB /* HomeSensorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSensorsTests.swift; sourceTree = "<group>"; };
+		DA2F51C01D0756DF00FA09AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA2F51A31D0756DF00FA09AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F740DAA8E00EDEBF4455FB7 /* Pods_HomeSensors.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2F51B71D0756DF00FA09AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B9DD1897D6F1A8C0EB671BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95E54E556B63667158796405 /* Pods-HomeSensors.debug.xcconfig */,
+				85CFC7D115D26B9A9769E369 /* Pods-HomeSensors.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA2F519D1D0756DF00FA09AB = {
+			isa = PBXGroup;
+			children = (
+				DA2F51A81D0756DF00FA09AB /* HomeSensors */,
+				DA2F51BD1D0756DF00FA09AB /* HomeSensorsTests */,
+				DA2F51A71D0756DF00FA09AB /* Products */,
+				4B9DD1897D6F1A8C0EB671BF /* Pods */,
+				F6E1E8B1A762747FD7C27A8A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DA2F51A71D0756DF00FA09AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA2F51A61D0756DF00FA09AB /* HomeSensors.app */,
+				DA2F51BA1D0756DF00FA09AB /* HomeSensorsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA2F51A81D0756DF00FA09AB /* HomeSensors */ = {
+			isa = PBXGroup;
+			children = (
+				DA2F51A91D0756DF00FA09AB /* AppDelegate.swift */,
+				DA2F51AB1D0756DF00FA09AB /* ViewController.swift */,
+				DA2F51AD1D0756DF00FA09AB /* Main.storyboard */,
+				DA2F51B01D0756DF00FA09AB /* Assets.xcassets */,
+				DA2F51B21D0756DF00FA09AB /* LaunchScreen.storyboard */,
+				DA2F51B51D0756DF00FA09AB /* Info.plist */,
+			);
+			path = HomeSensors;
+			sourceTree = "<group>";
+		};
+		DA2F51BD1D0756DF00FA09AB /* HomeSensorsTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA2F51BE1D0756DF00FA09AB /* HomeSensorsTests.swift */,
+				DA2F51C01D0756DF00FA09AB /* Info.plist */,
+			);
+			path = HomeSensorsTests;
+			sourceTree = "<group>";
+		};
+		F6E1E8B1A762747FD7C27A8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				370ACBC291C2966AB7993EE2 /* Pods_HomeSensors.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA2F51A51D0756DF00FA09AB /* HomeSensors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2F51C31D0756DF00FA09AB /* Build configuration list for PBXNativeTarget "HomeSensors" */;
+			buildPhases = (
+				DAACDEB0783409FCB7D8C82F /* [CP] Check Pods Manifest.lock */,
+				DA2F51A21D0756DF00FA09AB /* Sources */,
+				DA2F51A31D0756DF00FA09AB /* Frameworks */,
+				DA2F51A41D0756DF00FA09AB /* Resources */,
+				C1DD98CD2C5D363E1617DD72 /* [CP] Embed Pods Frameworks */,
+				B5440FF810C670317D0E8F90 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeSensors;
+			productName = HomeSensors;
+			productReference = DA2F51A61D0756DF00FA09AB /* HomeSensors.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA2F51B91D0756DF00FA09AB /* HomeSensorsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2F51C61D0756DF00FA09AB /* Build configuration list for PBXNativeTarget "HomeSensorsTests" */;
+			buildPhases = (
+				DA2F51B61D0756DF00FA09AB /* Sources */,
+				DA2F51B71D0756DF00FA09AB /* Frameworks */,
+				DA2F51B81D0756DF00FA09AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA2F51BC1D0756DF00FA09AB /* PBXTargetDependency */,
+			);
+			name = HomeSensorsTests;
+			productName = HomeSensorsTests;
+			productReference = DA2F51BA1D0756DF00FA09AB /* HomeSensorsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA2F519E1D0756DF00FA09AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Tomas Krejci";
+				TargetAttributes = {
+					DA2F51A51D0756DF00FA09AB = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = AAVEP8Q32L;
+					};
+					DA2F51B91D0756DF00FA09AB = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = AAVEP8Q32L;
+						TestTargetID = DA2F51A51D0756DF00FA09AB;
+					};
+				};
+			};
+			buildConfigurationList = DA2F51A11D0756DF00FA09AB /* Build configuration list for PBXProject "HomeSensors" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA2F519D1D0756DF00FA09AB;
+			productRefGroup = DA2F51A71D0756DF00FA09AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA2F51A51D0756DF00FA09AB /* HomeSensors */,
+				DA2F51B91D0756DF00FA09AB /* HomeSensorsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA2F51A41D0756DF00FA09AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2F51B41D0756DF00FA09AB /* LaunchScreen.storyboard in Resources */,
+				DA2F51B11D0756DF00FA09AB /* Assets.xcassets in Resources */,
+				DA2F51AF1D0756DF00FA09AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2F51B81D0756DF00FA09AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5440FF810C670317D0E8F90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeSensors/Pods-HomeSensors-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1DD98CD2C5D363E1617DD72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeSensors/Pods-HomeSensors-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAACDEB0783409FCB7D8C82F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA2F51A21D0756DF00FA09AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2F51AC1D0756DF00FA09AB /* ViewController.swift in Sources */,
+				DA2F51AA1D0756DF00FA09AB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2F51B61D0756DF00FA09AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA2F51BF1D0756DF00FA09AB /* HomeSensorsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA2F51BC1D0756DF00FA09AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA2F51A51D0756DF00FA09AB /* HomeSensors */;
+			targetProxy = DA2F51BB1D0756DF00FA09AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA2F51AD1D0756DF00FA09AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA2F51AE1D0756DF00FA09AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA2F51B21D0756DF00FA09AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA2F51B31D0756DF00FA09AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA2F51C11D0756DF00FA09AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA2F51C21D0756DF00FA09AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA2F51C41D0756DF00FA09AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95E54E556B63667158796405 /* Pods-HomeSensors.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HomeSensors/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomas789.HomeSensors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DA2F51C51D0756DF00FA09AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85CFC7D115D26B9A9769E369 /* Pods-HomeSensors.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HomeSensors/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomas789.HomeSensors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DA2F51C71D0756DF00FA09AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HomeSensorsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomas789.HomeSensorsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomeSensors.app/HomeSensors";
+			};
+			name = Debug;
+		};
+		DA2F51C81D0756DF00FA09AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HomeSensorsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomas789.HomeSensorsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomeSensors.app/HomeSensors";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA2F51A11D0756DF00FA09AB /* Build configuration list for PBXProject "HomeSensors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2F51C11D0756DF00FA09AB /* Debug */,
+				DA2F51C21D0756DF00FA09AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2F51C31D0756DF00FA09AB /* Build configuration list for PBXNativeTarget "HomeSensors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2F51C41D0756DF00FA09AB /* Debug */,
+				DA2F51C51D0756DF00FA09AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2F51C61D0756DF00FA09AB /* Build configuration list for PBXNativeTarget "HomeSensorsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2F51C71D0756DF00FA09AB /* Debug */,
+				DA2F51C81D0756DF00FA09AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA2F519E1D0756DF00FA09AB /* Project object */;
+}

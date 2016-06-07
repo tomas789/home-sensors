@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomeSensors" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pb-JX-du4">
+                                <rect key="frame" x="233" y="254" width="135" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unknown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTF-Ft-Zzy">
+                                <rect key="frame" x="264" y="289" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unknown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45q-DX-W3A">
+                                <rect key="frame" x="264" y="213" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDB-fs-aUu">
+                                <rect key="frame" x="252" y="178" width="96" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzJ-IC-Ycd">
+                                <rect key="frame" x="284" y="332" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZKG-Qg-qeY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unknown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybe-n0-Dhe" userLabel="Air Quality Label">
+                                <rect key="frame" x="264" y="137" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Air Quality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igo-0C-o8f">
+                                <rect key="frame" x="245" y="102" width="111" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="igo-0C-o8f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2kh-rJ-wfq"/>
+                            <constraint firstItem="4pb-JX-du4" firstAttribute="centerX" secondItem="pTF-Ft-Zzy" secondAttribute="centerX" id="5J7-tN-gwa"/>
+                            <constraint firstItem="45q-DX-W3A" firstAttribute="top" secondItem="jDB-fs-aUu" secondAttribute="bottom" constant="8" symbolic="YES" id="5hN-JF-IgG"/>
+                            <constraint firstItem="kzJ-IC-Ycd" firstAttribute="top" secondItem="pTF-Ft-Zzy" secondAttribute="bottom" constant="22" id="EUc-eA-1Nv"/>
+                            <constraint firstItem="jDB-fs-aUu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HAi-Ek-Fd5"/>
+                            <constraint firstItem="45q-DX-W3A" firstAttribute="leading" secondItem="pTF-Ft-Zzy" secondAttribute="leading" id="Icy-es-YqE"/>
+                            <constraint firstItem="kzJ-IC-Ycd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PK9-Tu-H3w"/>
+                            <constraint firstItem="jDB-fs-aUu" firstAttribute="top" secondItem="Ybe-n0-Dhe" secondAttribute="bottom" constant="20" id="RXn-7N-2PX"/>
+                            <constraint firstItem="Ybe-n0-Dhe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T8Z-0f-IdL"/>
+                            <constraint firstItem="Ybe-n0-Dhe" firstAttribute="top" secondItem="igo-0C-o8f" secondAttribute="bottom" constant="8" id="TbE-1t-8XE"/>
+                            <constraint firstItem="pTF-Ft-Zzy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ViB-2h-VUS"/>
+                            <constraint firstItem="pTF-Ft-Zzy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dSF-hp-Mir"/>
+                            <constraint firstItem="pTF-Ft-Zzy" firstAttribute="top" secondItem="4pb-JX-du4" secondAttribute="bottom" constant="8" symbolic="YES" id="nfp-23-gGm"/>
+                            <constraint firstItem="4pb-JX-du4" firstAttribute="top" secondItem="45q-DX-W3A" secondAttribute="bottom" constant="20" id="sAu-Il-Haa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="airQualityLabel" destination="Ybe-n0-Dhe" id="Zjy-be-Y2p"/>
+                        <outlet property="humidityLabel" destination="45q-DX-W3A" id="yPu-AQ-Apt"/>
+                        <outlet property="startButton" destination="kzJ-IC-Ycd" id="Ty0-De-Ysm"/>
+                        <outlet property="temperatureLabel" destination="pTF-Ft-Zzy" id="tzE-nr-EVL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="256" y="329"/>
+        </scene>
+    </scenes>
+</document>

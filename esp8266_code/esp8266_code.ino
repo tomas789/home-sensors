@@ -111,6 +111,11 @@ void loop() {
     }
     client.loop();
 
+    snprintf(msg, 100, "time: %d", now);
+    client.publish("humidity", msg);
+    client.publish("temperature", msg);
+    client.publish("air_quality", msg);
+
     for (int i = 0; i < BUFFER_SIZE; ++i) {
       dtostrf(humidities[i], 1, 5, f_to_str_buff);
       snprintf (msg, 100, "%d,%s", measurement_time[i], f_to_str_buff);
