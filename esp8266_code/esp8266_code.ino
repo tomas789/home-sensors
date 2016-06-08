@@ -2,6 +2,8 @@
 #include <PubSubClient.h>
 #include <DHT.h>
 
+#define DUST_PARTICLE_DEVICE 0
+
 #define DHTPIN D2
 #define DHTTYPE DHT22
 #define BUFFER_SIZE 2
@@ -19,11 +21,18 @@ int value = 0;
 
 int measure_idx = 0;
 long measurement_time[BUFFER_SIZE];
+
+#if DUST_PARTICLE_DEVICE
+int dust_particles[BUFFER_SIZE];
+
+#define DUST_LED_POWER D3
+#else
 float temperatures[BUFFER_SIZE];
 float humidities[BUFFER_SIZE];
 int air_qualities[BUFFER_SIZE];
 
 DHT dht(DHTPIN, DHTTYPE);
+#endif
 
 void setup_wifi() {
 
@@ -71,7 +80,12 @@ void reconnect() {
   while (!client.connected()) {
     Serial.print("Attempting MQTT connection...");
     // Attempt to connect
-    if (client.connect("ESP8266Client")) {
+#if DUST_PARTICLE_DEVICE
+    const char* device_name = "ESP8266ClientDust";
+#else
+    const char* device_name = "ESP8266Client";
+#endif
+    if (client.connect(device_name)) {
       Serial.println("connected");
       // Once connected, publish an announcement...
       client.publish("outTopic", "hello world");
@@ -88,7 +102,12 @@ void reconnect() {
 }
 
 void setup() {
+#if DUST_PARTICLE_DEVICE
+  pinMode(DUST_LED_POWER, OUTPUT);
+#else
   pinMode(BUILTIN_LED, OUTPUT);     // Initialize the BUILTIN_LED pin as an output
+#endif
+
   Serial.begin(115200);
   setup_wifi();
   client.setServer(mqtt_server, 1883);
@@ -112,11 +131,19 @@ void loop() {
     client.loop();
 
     snprintf(msg, 100, "time: %d", now);
+#if DUST_PARTICLE_DEVICE
+    client.publish("dust_particles", msg);
+#else
     client.publish("humidity", msg);
     client.publish("temperature", msg);
     client.publish("air_quality", msg);
+#endif
 
     for (int i = 0; i < BUFFER_SIZE; ++i) {
+#if DUST_PARTICLE_DEVICE
+      snprintf (msg, 100, "%d,%d", measurement_time[i], dust_particles[i]);
+      client.publish("dust_particles", msg);
+#else
       dtostrf(humidities[i], 1, 5, f_to_str_buff);
       snprintf (msg, 100, "%d,%s", measurement_time[i], f_to_str_buff);
       client.publish("humidity", msg);
@@ -127,6 +154,7 @@ void loop() {
 
       snprintf (msg, 100, "%d,%d", measurement_time[i], air_qualities[i]);
       client.publish("air_quality", msg);
+#endif
     }
 
     // Reset buffer
@@ -134,13 +162,24 @@ void loop() {
   }
 
   // Measure data
+  measure();
+  
+  lastMsg = now;
+}
+
+void measure() {
+  long now = millis();
   measurement_time[measure_idx] = now;
+  
+#if DUST_PARTICLE_DEVICE
+  dust_particles[measure_idx] = analogRead(0);
+#else
   humidities[measure_idx] = dht.readHumidity();
   temperatures[measure_idx] = dht.readTemperature();
   air_qualities[measure_idx] = analogRead(0);
+#endif
 
   measure_idx += 1;
-  lastMsg = now;
 }
 
 
